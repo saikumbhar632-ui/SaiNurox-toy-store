@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Order Details</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <center>
+
+        <h2>Enter Details</h2>
+
+        <form onsubmit="placeOrder(); return false;">
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="text" placeholder="Address" required><br>
+
+            <select>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit/Debit Card</option>
+                <option>Wallet</option>
+                <option>Net Banking</option>
+            </select><br>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+    </center>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
