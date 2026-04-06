@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    background: #0f172a; /* dark blue-black */
+    color: white;
+    font-weight: bold; 
+}
+
+/* HEADER */
+header {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+
+h3
+{
+    font-size: 23px;
+}
+
+h2
+{
+    color: #38bdf8;
+    font-size: 3.0em;
+}
+
+h1 {
+    animation: slideDown 1s ease, glow 2s infinite alternate;
+    color: #e1f5fd;
+    font-size: 4.5em;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #38bdf8;
+    }
+    to {
+        text-shadow: 0 0 20px #38bdf8;
+    }
+}
+/* NAVBAR */
+nav {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #030303;
+    margin: 15px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(0, 162, 255);
+}
+
+/* BUTTON */
+button {
+    background: #38bdf8;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* PRODUCT CARD */
+.card {
+    width: 220px;
+    margin: 15px;
+    padding: 10px;
+    background: #1e293b;
+    gap: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+.card img {
+    width: 100%;
+}
+
+.pro-container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+/* FORM */
+input, textarea, select {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+}
+
+a
+{
+    color: #38bdf8;
+    font-size: 20px;
+}
+
+p
+{
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.feature
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.poster
+{
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+      transition: 0.3s;
+}
+.poster:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px #38bdf8;
+}
